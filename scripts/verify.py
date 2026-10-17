@@ -42,7 +42,7 @@ def main():
     log = io.StringIO()
     suite = unittest.defaultTestLoader.discover(str(ROOT / "tests"))
     result = unittest.TextTestRunner(stream=log, verbosity=2, resultclass=RecordingResult).run(suite)
-    report = {"started_at_utc": started, "finished_at_utc": utc_now(), "python": platform.python_version(), "platform": platform.platform(), "tests_run": result.testsRun, "failures": len(result.failures), "errors": len(result.errors), "skipped": len(result.skipped), "successful": result.wasSuccessful(), "scope": "Local file utilities, CLI, JSONL filtering, redaction patterns and fictional demo checks. No GitHub CI or installed-package checks.", "checks": result.checks, "log": log.getvalue()}
+    report = {"started_at_utc": started, "finished_at_utc": utc_now(), "python": platform.python_version(), "platform": platform.platform(), "tests_run": result.testsRun, "failures": len(result.failures), "errors": len(result.errors), "skipped": len(result.skipped), "successful": result.wasSuccessful(), "scope": "Seven local file utilities, CLI, file preservation, strict JSON, captured stream usage, recorded retry timing, dated Batch envelopes and fictional demo. Independent JSON Schema comparison and installed-package checks are separate CI steps.", "checks": result.checks, "log": log.getvalue()}
     if args.output:
         write_new(args.output, json_text(report))
     print(json_text({key: report[key] for key in ["python", "tests_run", "failures", "errors", "skipped", "successful"]}), end="")

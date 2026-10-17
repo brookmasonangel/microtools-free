@@ -1,0 +1,9 @@
+data: {"id":"demo-stream","object":"chat.completion.chunk","choices":[{"index":0,"delta":{"content":"Fictional example"},"finish_reason":null}],"usage":null}
+
+data: {"id":"demo-stream","object":"chat.completion.chunk","choices":[{"index":0,"delta":{},"finish_reason":"stop"}],"usage":null}
+
+data: {"id":"demo-stream","object":"chat.completion.chunk","choices":[],"usage":{"prompt_tokens":40,"completion_tokens":10,"total_tokens":50,"prompt_tokens_details":{"cached_tokens":12},"completion_tokens_details":{"reasoning_tokens":2}}}
+
+data: [DONE]
+
+

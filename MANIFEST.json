@@ -1,6 +1,6 @@
 {
   "format": "microtools.file-manifest.v1",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "files": [
     {
       "path": ".gitattributes",
@@ -9,8 +9,8 @@
     },
     {
       "path": ".github/workflows/tests.yml",
-      "bytes": 633,
-      "sha256": "1b6efb23faf10dc2890383342a4f5432052fbe18641f43870c54c379977e14ea"
+      "bytes": 1015,
+      "sha256": "357b1f38d51df69a709813843bbb47478f02d36bbe2407d8dc6d492d47216442"
     },
     {
       "path": ".gitignore",
@@ -19,13 +19,13 @@
     },
     {
       "path": "BUILD_NOTES.txt",
-      "bytes": 2389,
-      "sha256": "3a15070b42fb7bfee414a55f43b79111774edbc3534a9eefb61b644fd2f73514"
+      "bytes": 2544,
+      "sha256": "ab951966a805be35b616516dc4a7b5d46fdf5d9e9098418e7a2b71bf5c673899"
     },
     {
       "path": "CONTRIBUTING.md",
-      "bytes": 857,
-      "sha256": "fa1f990b97f1c728dff30f12a8bab384832363d48ac3cc63bd45701cd52d2e61"
+      "bytes": 1376,
+      "sha256": "2de02b62452cf2cd89f116ee75808e3ea573a0cea973b01d88adcafdf7842a47"
     },
     {
       "path": "LICENSE",
@@ -39,8 +39,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 9001,
-      "sha256": "3fad529b5bdcd795f15e6ff08701d0cbcdee7deba65abaf77f40a3070d33c502"
+      "bytes": 12526,
+      "sha256": "25d376b69443eb3dbd97c7b7044ca17dff58dc5db704de36f8a3fee41b8683b6"
     },
     {
       "path": "Run-Demo.cmd",
@@ -48,9 +48,24 @@
       "sha256": "cee05d2272b0079aeada700fe666082f545f9c79dca3fd8be0e8e928ec4b4f00"
     },
     {
+      "path": "docs/DIAGNOSTICS.md",
+      "bytes": 10562,
+      "sha256": "4df636e32418485af44a544c5d53d106efd620d84721f7eebfd21a600495dae7"
+    },
+    {
       "path": "docs/GITHUB_UPLOAD.md",
-      "bytes": 2446,
-      "sha256": "0ff49a63867b2a7dd4418f08aa00c188a376e408d527a52edd386436dba48fd4"
+      "bytes": 2448,
+      "sha256": "e92c15affc9ae105db2249f1ffe92db74d145d0ead247f9b9f12c3c28180ae56"
+    },
+    {
+      "path": "examples/batch-input.jsonl",
+      "bytes": 336,
+      "sha256": "adb6205a01096c7639dd840d6e45ae88333134ee15d667f980346fab2264a385"
+    },
+    {
+      "path": "examples/batch-results.jsonl",
+      "bytes": 303,
+      "sha256": "34e945e87bf7796c0c3a08245c6ca22a3d8f5b8237ba70957f38f9c840204d1b"
     },
     {
       "path": "examples/config-after.json",
@@ -93,9 +108,24 @@
       "sha256": "5501a01e82a5c97a292efe79a9fde96dfbeda4db7f6fa0a6126920b9689c1da8"
     },
     {
+      "path": "examples/retry-attempts.jsonl",
+      "bytes": 339,
+      "sha256": "3631f56718bc29e48b97e9e0714ec0ce22bf5f440487b5f5aaeab3eeeea8b28a"
+    },
+    {
+      "path": "examples/stream-complete.sse",
+      "bytes": 546,
+      "sha256": "d7e8c7ba6a346821488884600242877f27ee24604285110dae01667205e99e14"
+    },
+    {
+      "path": "examples/stream-saved.json",
+      "bytes": 98,
+      "sha256": "fb46e340ffad19d9eb7865808850770e000fd25f64b7b29e9462b3237120414c"
+    },
+    {
       "path": "microtools_free/__init__.py",
-      "bytes": 88,
-      "sha256": "707832b41ace83a436148d63f9a4bf9ecd1b4060d2ea56daafbffda041fde4f5"
+      "bytes": 86,
+      "sha256": "e22a8d336141fdf0009b34d227f349e9c9dbe7c6ee18dc759f261fb6ec8e4ca5"
     },
     {
       "path": "microtools_free/__main__.py",
@@ -103,9 +133,14 @@
       "sha256": "935a1c1166b0c1ea35a82256345000bf2c73ded718d77773bc27a71ecce28f7d"
     },
     {
+      "path": "microtools_free/batchcontract.py",
+      "bytes": 7520,
+      "sha256": "8dc1da1d9bd9071e3d900e59716204880d6baec788a01a4ba00d24a7b763db3b"
+    },
+    {
       "path": "microtools_free/cli.py",
-      "bytes": 6101,
-      "sha256": "4ac3802cff23e4841c96b9fc4359811959a5d37339d73ac9e6e31e179a880dec"
+      "bytes": 8332,
+      "sha256": "fb61128adde6afa77627527c996b9215b305acfc4f069e9de573d4f5e31a0f15"
     },
     {
       "path": "microtools_free/common.py",
@@ -114,8 +149,13 @@
     },
     {
       "path": "microtools_free/demo.py",
-      "bytes": 3006,
-      "sha256": "a776cf48db173528f51def0d6b79e7ac891014e747c1b92a3fd639e19f088649"
+      "bytes": 4255,
+      "sha256": "ddcfefe845469f4a9949b7e904a8204a6f7cb377969bb12e4600620b25ab6910"
+    },
+    {
+      "path": "microtools_free/diagnostics.py",
+      "bytes": 2500,
+      "sha256": "0804c0f0baab7f993220bf844a9029707959ac4d29653ef7315f0c6c64c17c8b"
     },
     {
       "path": "microtools_free/diffing.py",
@@ -133,14 +173,49 @@
       "sha256": "eb1e33da692430dfed77170b6547efd242369b0079675df38f5b6df2f69792f1"
     },
     {
+      "path": "microtools_free/retrylens.py",
+      "bytes": 10232,
+      "sha256": "618cc9200960ed52eeb1ee0650eaa7a227c4e4e310e5b766a8de6cefb1a66457"
+    },
+    {
+      "path": "microtools_free/schemas/openai-batch-envelope-2026-10-17/error.json",
+      "bytes": 2505,
+      "sha256": "bf4f49305034b9a3dddb71f9638efdabfdb48c0527f3410d5dd490e65a32cdb7"
+    },
+    {
+      "path": "microtools_free/schemas/openai-batch-envelope-2026-10-17/input.json",
+      "bytes": 937,
+      "sha256": "8b1be396071d5f903ab2c50084c6714f3d6c6c4229cec5da7cfdaead565908eb"
+    },
+    {
+      "path": "microtools_free/schemas/openai-batch-envelope-2026-10-17/result.json",
+      "bytes": 2065,
+      "sha256": "acff1552824d94dcc410c1e10134fb4a485b6dd75cee5667a55bb296900ecf73"
+    },
+    {
+      "path": "microtools_free/streamusage.py",
+      "bytes": 11069,
+      "sha256": "b4972de73501f3dd5384ccc7f6f2de0fefd278b11b34b6736e048ffa6a64e247"
+    },
+    {
       "path": "pyproject.toml",
-      "bytes": 436,
-      "sha256": "f5c4208ec0015079f88f55d6e8f69eefd525841bef02446334a71aeed8ded6db"
+      "bytes": 487,
+      "sha256": "adf4cb2a07d4a522fef3442901162cc0d1b235656a3f81c3b33f26f28329e946"
     },
     {
       "path": "sample-output/accepted-rows.jsonl",
       "bytes": 87,
       "sha256": "39f12a690aa443e7014b4e8b72e6f877193d7838c27bd9525c6db93f6a332fa3"
+    },
+    {
+      "path": "sample-output/batch-input.json",
+      "bytes": 851,
+      "sha256": "23a9800d77e03bda2aac433590d2f1cbd2281a716ff6b1ffb6b39cdb2d472c26"
+    },
+    {
+      "path": "sample-output/batch-results.json",
+      "bytes": 853,
+      "sha256": "db285f9384859c81896799214666fdcf7fb9aa97f6d4e281da553467766028be"
     },
     {
       "path": "sample-output/config-diff.json",
@@ -149,8 +224,8 @@
     },
     {
       "path": "sample-output/demo-summary.json",
-      "bytes": 406,
-      "sha256": "09244f1649b743566573c1683b29976f2f611272b865e6135a1cc693f8599701"
+      "bytes": 598,
+      "sha256": "a14df3732cb3faa81c738f951d1e074d471b8281b5c6ede86453d31d32dc5037"
     },
     {
       "path": "sample-output/jsonl-broken.json",
@@ -183,14 +258,44 @@
       "sha256": "d0ab9a7ea79c61b1764ac83b94ad89c52aadb65a35ccfb4d1bd9694245e4b12e"
     },
     {
+      "path": "sample-output/retry-timing.json",
+      "bytes": 1435,
+      "sha256": "c33bfce998b116f7b3f35c9ba390474dcb01a6c076e9dbcd817ba5a25c05d5f8"
+    },
+    {
+      "path": "sample-output/stream-usage.json",
+      "bytes": 1414,
+      "sha256": "967344b85110c1436b8d825512bf79594cd40f08365f173a4cfe832359b546e5"
+    },
+    {
+      "path": "scripts/check_schemas.py",
+      "bytes": 2817,
+      "sha256": "9273d0f34d39f97474600c14c0b1aedc15ed3e09e1086e1bb06fa8d5e1c34be3"
+    },
+    {
+      "path": "scripts/installed_smoke.py",
+      "bytes": 2869,
+      "sha256": "a48cb5b26569ccf8be8f61f97f1c74774817035f7182d1fcd44fadf8f9c92c6a"
+    },
+    {
       "path": "scripts/verify.py",
-      "bytes": 2295,
-      "sha256": "cb4e69b93cb57f0ab42a01522cac28e2fad065692c10d56a26f24abd0c9510df"
+      "bytes": 2403,
+      "sha256": "a549a0ac00c71546995d7e4c29eda5bf3da30c53e5d32f415c7c004fb2d1f995"
     },
     {
       "path": "tests/test_cli.py",
       "bytes": 6291,
       "sha256": "b3c471ba7e91103322554e5f1816c15a63cdbc19f78de3f204fd3b195c204ca0"
+    },
+    {
+      "path": "tests/test_diagnostic_cli.py",
+      "bytes": 5643,
+      "sha256": "31481c904b260d9afeb1c5be86fb5e0f49d681d4ee9194cd06e4a573899e0cb0"
+    },
+    {
+      "path": "tests/test_diagnostics.py",
+      "bytes": 23617,
+      "sha256": "3d5a81e9ae36343c835b3446af9cb0636899294f7e0a9280d6004130aa034abd"
     },
     {
       "path": "tests/test_files.py",
@@ -218,10 +323,15 @@
       "sha256": "d51ac12f9761597af6697a2941c70e401cdc67cef5f473f64b24693608f993b9"
     },
     {
+      "path": "verification/python-3.14-v0.2.0.json",
+      "bytes": 31794,
+      "sha256": "a06a8eab2dbfdee91adf6d36a549e28a1938c01352b7da9c497426eb64753e1b"
+    },
+    {
       "path": "verification/python-3.14.json",
       "bytes": 14094,
       "sha256": "61d7ac2a0a1c233ca62ecc0b5d886828187cc5eb0424d8504eac4e4774224d6e"
     }
   ],
-  "scope": "Integrity hashes for packaged files except this manifest. Not independently signed. Text bytes may change after Git line-ending conversion."
+  "scope": "Integrity hashes for published files except this manifest. Not independently signed. Text bytes may change after Git line-ending conversion."
 }

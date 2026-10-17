@@ -1,0 +1,100 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/brookmasonangel/microtools-free/main/microtools_free/schemas/openai-batch-envelope-2026-10-17/result.json",
+  "title": "BatchContractCheck openai-batch-envelope-2026-10-17: result",
+  "description": "A dated envelope profile; body objects are opaque and API acceptance is not established.",
+  "type": "object",
+  "required": [
+    "id",
+    "custom_id",
+    "response",
+    "error"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "custom_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "response": {
+      "oneOf": [
+        {
+          "type": "null"
+        },
+        {
+          "type": "object",
+          "required": [
+            "status_code",
+            "request_id",
+            "body"
+          ],
+          "properties": {
+            "status_code": {
+              "type": "integer",
+              "minimum": 100,
+              "maximum": 599
+            },
+            "request_id": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "body": {
+              "type": "object"
+            }
+          }
+        }
+      ]
+    },
+    "error": {
+      "oneOf": [
+        {
+          "type": "null"
+        },
+        {
+          "type": "object",
+          "required": [
+            "code",
+            "message"
+          ],
+          "properties": {
+            "code": {
+              "type": "string",
+              "minLength": 1
+            },
+            "message": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        }
+      ]
+    }
+  },
+  "oneOf": [
+    {
+      "properties": {
+        "response": {
+          "type": "object"
+        },
+        "error": {
+          "type": "null"
+        }
+      }
+    },
+    {
+      "properties": {
+        "response": {
+          "type": "null"
+        },
+        "error": {
+          "type": "object"
+        }
+      }
+    }
+  ]
+}

@@ -3,7 +3,7 @@
 Use a fresh extraction of `MicroTools_Free_v0.1.0.zip` for your first upload. It contains the complete free toolkit, MIT licence, examples, local test evidence and GitHub test workflow.
 
 1. Sign in and open [Create a repository](https://github.com/new).
-2. Use your account as owner, name it `microtools-free`, and choose **Public**. Suggested description: `Four free local tools for prompt diffs, JSON config diffs, JSONL diagnostics and log redaction.` Leave GitHub's generated README, licence and .gitignore options off; those files are already supplied. Click **Create repository**.
+2. Use your account as owner, name it `microtools-free`, and choose **Public**. Suggested description: `Seven free local tools for text, config, JSONL, logs, stream usage, retry timing and Batch files.` Leave GitHub's generated README, licence and .gitignore options off; those files are already supplied. Click **Create repository**.
 3. On the empty repository page, click **uploading an existing file**. On a populated repository, use **Add file → Upload files**.
 4. Open the extracted `microtools-free` directory. Drag its **contents** into the upload area, preserving subfolders. Upload the source files, not the ZIP or an extra outer folder. `README.md`, `LICENSE`, `microtools_free`, `tests` and `examples` should appear at the repository root. Include `.github`, `.gitignore` and `.gitattributes` from the fresh package.
 5. Use commit message `Initial release of Micro Tools Free`, choose the repository's default branch for this initial upload, and complete the commit. The confirmation label can vary with branch settings.

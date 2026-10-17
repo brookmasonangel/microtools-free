@@ -8,7 +8,11 @@
     "four_problem_rows_detected": true,
     "two_good_rows_preserved": true,
     "six_redaction_regions": true,
-    "ordinary_log_text_preserved": true
+    "ordinary_log_text_preserved": true,
+    "stream_optional_usage_loss_detected": true,
+    "retry_before_header_hint_detected": true,
+    "two_batch_requests_accepted": true,
+    "provider_error_is_a_valid_result_envelope": true
   },
   "all_demo_checks_passed": true
 }

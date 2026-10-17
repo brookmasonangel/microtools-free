@@ -1,0 +1,18 @@
+{
+  "tool": "BatchContractCheck",
+  "profile": "openai-batch-envelope-2026-10-17",
+  "kind": "input",
+  "schema_id": "https://raw.githubusercontent.com/brookmasonangel/microtools-free/main/microtools_free/schemas/openai-batch-envelope-2026-10-17/input.json",
+  "valid": true,
+  "physical_lines": 2,
+  "parsed_object_rows": 2,
+  "accepted_rows": 2,
+  "rejected_rows": 0,
+  "provider_error_rows": 0,
+  "http_error_rows": 0,
+  "total_issues": 0,
+  "issues_by_code": {},
+  "issues": [],
+  "issue_details_truncated": false,
+  "scope": "Dated OpenAI Batch envelopes, unique custom_id values, and input endpoint/explicit-model consistency. Body objects are opaque. A well-formed provider error can pass this format check. Does not validate model availability, endpoint-specific request parameters, business success, file reconciliation or API acceptance."
+}

@@ -1,0 +1,2 @@
+{"id":"batch-example-a","custom_id":"example-a","response":{"status_code":200,"request_id":"request-example-a","body":{"example":true}},"error":null}
+{"id":"batch-example-b","custom_id":"example-b","response":null,"error":{"code":"batch_expired","message":"Fictional request expired before execution"}}

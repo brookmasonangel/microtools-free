@@ -1,0 +1,2 @@
+{"operation_id":"demo-operation","attempt":1,"started_at":"2026-10-17T00:00:00Z","response_at":"2026-10-17T00:00:01Z","status_code":429,"response_headers":{"Retry-After":"5"}}
+{"operation_id":"demo-operation","attempt":2,"started_at":"2026-10-17T00:00:03Z","response_at":"2026-10-17T00:00:03.250Z","status_code":200,"response_headers":{}}

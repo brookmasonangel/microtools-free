@@ -1,40 +1,44 @@
-MICRO TOOLS FREE — BUILD NOTES
-Version 0.1.0 — 2026-10-02
+MICRO TOOLS FREE - BUILD NOTES
+Version 0.2.0 - 2026-10-17
 
-Delivered
-Four free CLI utilities in a separate package:
-PromptDiff — text differences and optional whitespace normalization.
-ConfigDiff — JSON value differences, escaped paths and ignored subtrees.
-JSONLDoctor — complete-row audit, missing fields, string IDs and explicit filtering.
-LogRedact — configured credential patterns, supplied literal values and optional emails.
-Includes MIT licence, examples, Windows launchers, repository documentation,
-GitHub upload steps, test workflow and retained local test results.
+Seven tools in one public, MIT-licensed package
+PromptDiff: text differences and optional whitespace normalization.
+ConfigDiff: JSON differences, escaped paths and ignored subtrees.
+JSONLDoctor: strict object-row audit and explicit filtered copies.
+LogRedact: documented credential patterns and supplied literal secrets.
+StreamUsageAudit: captured Chat Completions SSE usage and saved-record comparison.
+RetryLens: explicit recorded HTTP attempt timing and retry-header comparisons.
+BatchContractCheck: dated Batch envelope profiles and file consistency checks.
 
-Proven by retained checks
-55 checks passed on Python 3.13.14 with zero failures, errors or skips.
-55 checks passed on Python 3.14.3 with zero failures, errors or skips.
-Both test executions ran on Windows. See verification/*.json for individual
-test names and logs. The four-tool demo passed all seven aggregate checks.
-It retained two prompt changes, two JSON setting changes, four rejected
-JSONL rows, two accepted JSONL rows and six redaction regions from fictional data.
-No model API, remote service or live credentials were used.
+Implementation and boundaries
+The three new diagnostics use standard-library parsing, date arithmetic and fixed
+field checks. No requests, credentials, model execution, retry scheduling,
+execution-control framework or remote service is included.
+The Batch schemas are self-contained Draft 2020-12 documents bundled in the package.
+Inputs are preserved. Existing outputs are never overwritten.
+See README.md and docs/DIAGNOSTICS.md for input formats, limits and interpretation.
+Examples and sample-output contain fictional data.
+
+Retained local evidence
+119 tests passed on Windows with Python 3.14.3, with no failures, errors or skips.
+See verification/python-3.14-v0.2.0.json for names and log.
+The expanded demo exercises all seven tools and has eleven aggregate checks.
+The older 55-test results in verification describe the previous four-tool release.
+
+CI and distribution
+The workflow tests Ubuntu and Windows with Python 3.11, 3.13 and 3.14.
+It also compares fixed Batch checks with a development-only JSON Schema validator,
+installs the package and checks all seven commands outside the source checkout.
+Current completed execution results are linked from README.md.
+The runtime has no third-party dependencies. Package installation uses setuptools.
+Python 3.11+ is required; no standalone executable installer is supplied.
+Source-tree examples/demo and tests are distributed through the source download.
+Schemas are included in the installed Python package.
+MANIFEST.json lists the published files and SHA-256 hashes, excluding itself.
+Hashes describe bytes; they are not independent signatures.
 
 Evidence limits
-GitHub CI is configured but has not run; the repository is not published.
-Ubuntu/Linux, macOS and Python 3.11 were not exercised locally.
-Package installation and standalone executable installation were not tested.
-Source-folder execution requires Python 3.11 or later and no third-party packages.
-LogRedact masks documented patterns; it cannot establish comprehensive secret
-or personal-data removal. Unsupported or encoded data may remain. Review output.
-JSONLDoctor checks objects, strict JSON, top-level field presence and string IDs;
-it does not infer a schema or repair rejected rows. Filtering requires an explicit flag.
-Text input size and diagnostic/match caps are documented in README.md.
-Local tests do not establish adoption, demand, paid conversion or production suitability.
-
-Publication
-Use a fresh extraction and upload the contents of the microtools-free directory
-to a public repository named microtools-free. Include the supplied README,
-licence, .github workflow and source subdirectories at the repository root.
-docs/GITHUB_UPLOAD.md contains the browser steps and official references.
-The free package contains these four commands; the eight-tool suite is separate.
-Original synced project reference files were not modified.
+Functional tests do not establish market demand, production suitability,
+recording completeness, billing accuracy or live provider acceptance.
+Log redaction is limited to documented patterns and cannot certify disclosure.
+No private source or synced project reference files were included or modified.

@@ -9,10 +9,13 @@ from .common import ToolError, json_text, read_json, read_text, write_new
 from .diffing import config_diff, prompt_diff
 from .jsonldoctor import audit, filtered_text, physical_lines
 from .logredact import redact
+from .streamusage import audit_stream
+from .retrylens import audit_retries
+from .batchcontract import audit_batch, endpoints
 
 
 def parser() -> argparse.ArgumentParser:
-    root = argparse.ArgumentParser(prog="microtools-free", description="Four free local file utilities. Run without third-party packages or network calls.")
+    root = argparse.ArgumentParser(prog="microtools-free", description="Seven free local file utilities. Run without third-party packages or network calls.")
     root.add_argument("--version", action="version", version=__version__)
     sub = root.add_subparsers(dest="tool", required=True)
     prompt = sub.add_parser("promptdiff", help="See exactly how two prompt text files differ")
@@ -37,7 +40,20 @@ def parser() -> argparse.ArgumentParser:
     logs.add_argument("--emails", action="store_true", help="Also mask addresses matched by the email pattern")
     logs.add_argument("--preview", action="store_true", help="Print the redacted text; otherwise print summary only")
     logs.add_argument("--report", help="Create a separate summary JSON file containing no matched values")
-    for command in [prompt, config, doctor]:
+    stream = sub.add_parser("streamusageaudit", help="Inspect usage snapshots in a captured Chat Completions SSE file")
+    stream.add_argument("file")
+    stream.add_argument("--saved", help="Optional saved response JSON to compare with captured usage")
+    stream.add_argument("--saved-is-usage", action="store_true", help="Treat --saved as a usage object instead of a response")
+    retry = sub.add_parser("retrylens", help="Measure retry waits and bursts in recorded HTTP-attempt JSONL")
+    retry.add_argument("file")
+    retry.add_argument("--burst-window", type=float, default=1.0, help="Window width in seconds, greater than zero and at most 3600")
+    batch = sub.add_parser("batchcontractcheck", help="Check Batch JSONL against bundled, dated envelope profiles")
+    batch.add_argument("file")
+    batch.add_argument("--kind", choices=["input", "result", "error"], default="input")
+    batch.add_argument("--endpoint", choices=endpoints(), help="Expected endpoint for an input file")
+    for command in [stream, retry, batch]:
+        command.add_argument("--max-issues", type=int, default=200)
+    for command in [prompt, config, doctor, stream, retry, batch]:
         command.add_argument("--output", help="Create a new report file; otherwise print to terminal")
     logs.add_argument("--output", help="Create a new redacted log file; original is preserved")
     return root
@@ -83,6 +99,21 @@ def main(argv: list[str] | None = None) -> int:
         elif args.tool == "configdiff":
             report = config_diff(read_json(args.before), read_json(args.after), ignore=args.ignore)
             code = int(report["changed"])
+        elif args.tool == "streamusageaudit":
+            if args.saved_is_usage and not args.saved:
+                raise ToolError("--saved-is-usage requires --saved")
+            report = audit_stream(read_text(args.file), saved=read_json(args.saved) if args.saved else None,
+                                  compare_saved=bool(args.saved), saved_is_usage=args.saved_is_usage,
+                                  max_issues=args.max_issues)
+            code = int(not report["clean"])
+        elif args.tool == "retrylens":
+            report = audit_retries(read_text(args.file), max_issues=args.max_issues,
+                                   burst_window_seconds=args.burst_window)
+            code = int(not report["clean"])
+        elif args.tool == "batchcontractcheck":
+            report = audit_batch(read_text(args.file), kind=args.kind, endpoint=args.endpoint,
+                                 max_issues=args.max_issues)
+            code = int(not report["valid"])
         else:
             if args.drop_invalid and not args.write_valid:
                 raise ToolError("--drop-invalid requires --write-valid")

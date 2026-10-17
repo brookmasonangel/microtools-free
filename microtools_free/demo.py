@@ -1,4 +1,4 @@
-"""Exercise the four utilities with fictional local data and retained reports."""
+"""Exercise the seven utilities with fictional local data and retained reports."""
 from __future__ import annotations
 
 import argparse
@@ -9,6 +9,9 @@ from .common import ToolError, json_text, read_json, read_text, write_new
 from .diffing import config_diff, prompt_diff
 from .jsonldoctor import audit, filtered_text
 from .logredact import redact
+from .streamusage import audit_stream
+from .retrylens import audit_retries
+from .batchcontract import audit_batch
 
 
 def build_demo(destination: Path | None = None) -> dict:
@@ -35,7 +38,24 @@ def build_demo(destination: Path | None = None) -> dict:
     redacted, log_report = redact(read_text(examples / "demo.log"), extra_secrets=["DEMO_LITERAL_NOT_REAL"], emails=True)
     write_new(destination / "redacted-demo.log", redacted)
     save("redaction-report.json", log_report)
+    stream = audit_stream(read_text(examples / "stream-complete.sse"),
+                         saved=read_json(examples / "stream-saved.json"), compare_saved=True)
+    save("stream-usage.json", stream)
+    retry = audit_retries(read_text(examples / "retry-attempts.jsonl"))
+    save("retry-timing.json", retry)
+    batch = audit_batch(read_text(examples / "batch-input.jsonl"))
+    save("batch-input.json", batch)
+    batch_results = audit_batch(read_text(examples / "batch-results.jsonl"), kind="result")
+    save("batch-results.json", batch_results)
     checks = {"prompt_changes_detected": prompt["changed"], "two_config_changes_detected": len(config["changes"]) == 2, "valid_jsonl_accepted": valid["valid"] and valid["accepted_rows"] == 2, "four_problem_rows_detected": not broken["valid"] and broken["rejected_rows"] == 4, "two_good_rows_preserved": len(accepted) == 2, "six_redaction_regions": log_report["redactions"] == 6, "ordinary_log_text_preserved": "Keep this text" in redacted}
+    checks.update({
+        "stream_optional_usage_loss_detected": stream["comparison"]["status"] == "different"
+            and {x["field"] for x in stream["comparison"]["differences"]} == {"cached_tokens", "reasoning_tokens"},
+        "retry_before_header_hint_detected": retry["follow_ups_before_hint"] == 1,
+        "two_batch_requests_accepted": batch["valid"] and batch["accepted_rows"] == 2,
+        "provider_error_is_a_valid_result_envelope": batch_results["valid"]
+            and batch_results["accepted_rows"] == 2 and batch_results["provider_error_rows"] == 1,
+    })
     result = {"demo": "Micro Tools Free", "mode": "local fictional examples; no network calls", "checks": checks, "all_demo_checks_passed": all(checks.values())}
     save("demo-summary.json", result)
     return {**result, "output_directory": str(destination)}

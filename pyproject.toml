@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "microtools-free"
-version = "0.1.0"
-description = "Four free local utilities for debugging prompt, config, JSONL and log files"
+version = "0.2.0"
+description = "Seven free local utilities for technical workflow files"
 readme = "README.md"
 requires-python = ">=3.11"
 license = {text = "MIT"}
@@ -16,3 +16,6 @@ microtools-free = "microtools_free.cli:main"
 
 [tool.setuptools]
 packages = ["microtools_free"]
+
+[tool.setuptools.package-data]
+microtools_free = ["schemas/*/*.json"]

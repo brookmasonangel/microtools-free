@@ -1,0 +1,54 @@
+{
+  "tool": "StreamUsageAudit",
+  "profile": "openai-chat-completions-sse-v1",
+  "clean": false,
+  "data_events": 4,
+  "chunks": 3,
+  "done_marker_observed": true,
+  "finish_markers_for_observed_choices": true,
+  "stream_ids_consistent": true,
+  "null_usage_events": 2,
+  "valid_usage_snapshots": 1,
+  "latest_observed_usage": {
+    "prompt_tokens": 40,
+    "completion_tokens": 10,
+    "total_tokens": 50,
+    "cached_tokens": 12,
+    "reasoning_tokens": 2
+  },
+  "latest_usage_line": 5,
+  "comparison": {
+    "requested": true,
+    "status": "different",
+    "differences": [
+      {
+        "field": "cached_tokens",
+        "captured": 12,
+        "saved": null
+      },
+      {
+        "field": "reasoning_tokens",
+        "captured": 2,
+        "saved": null
+      }
+    ],
+    "saved_usage": {
+      "prompt_tokens": 40,
+      "completion_tokens": 10,
+      "total_tokens": 50
+    }
+  },
+  "total_issues": 1,
+  "issues_by_code": {
+    "usage_not_preserved": 1
+  },
+  "issues": [
+    {
+      "code": "usage_not_preserved",
+      "severity": "warning",
+      "message": "Captured and saved usage fields differ or are missing"
+    }
+  ],
+  "issue_details_truncated": false,
+  "scope": "Recorded Chat Completions SSE only. Uses the latest valid usage snapshot; snapshots are not added. Does not recover missing counts, estimate a bill, authenticate captures or establish that an entire request was recorded."
+}

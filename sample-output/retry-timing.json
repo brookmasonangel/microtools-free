@@ -1,0 +1,48 @@
+{
+  "tool": "RetryLens",
+  "profile": "recorded-http-attempts-v1",
+  "clean": false,
+  "physical_lines": 2,
+  "valid_records": 2,
+  "operation_count": 1,
+  "compared_follow_ups": 1,
+  "follow_ups_before_hint": 1,
+  "overlapping_follow_ups": 0,
+  "burst_window_seconds": 1.0,
+  "peak_attempt_starts_in_window": 1,
+  "operations": [
+    {
+      "operation_number": 1,
+      "records": 2,
+      "timing_comparable": true,
+      "transitions": [
+        {
+          "previous_line": 1,
+          "line": 2,
+          "wait_seconds": 2.0,
+          "previous_status_code": 429,
+          "retry_after_seconds": 5.0,
+          "retry_after_ms_seconds": null,
+          "before_standard_hint": true,
+          "before_ms_hint": false
+        }
+      ]
+    }
+  ],
+  "operation_details_truncated": false,
+  "total_issues": 1,
+  "issues_by_code": {
+    "before_retry_hint": 1
+  },
+  "issues": [
+    {
+      "code": "before_retry_hint",
+      "severity": "warning",
+      "message": "Observed follow-up starts before a recorded retry hint",
+      "line": 2,
+      "operation_number": 1
+    }
+  ],
+  "issue_details_truncated": false,
+  "scope": "Measures provided timestamps and explicit operation/attempt IDs. response_at means header receipt, not body completion. HTTP-date comparisons depend on the recording clock. Header hints are checked separately. Does not infer operation identity, diagnose a freeze, execute retries or change policy."
+}
