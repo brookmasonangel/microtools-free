@@ -2,6 +2,8 @@
 
 Four small local utilities for debugging AI workflow files. See what changed in a prompt, compare JSON settings, find broken JSONL rows, and mask recognised credentials in logs.
 
+[Download source ZIP](https://github.com/brookmasonangel/microtools-free/archive/refs/heads/main.zip) Â· [GitHub test results](https://github.com/brookmasonangel/microtools-free/actions/runs/39022035167)
+
 Python 3.11+. No third-party runtime packages, account, API key or network calls. MIT licensed.
 
 | Tool | Problem it solves | Command |
@@ -72,7 +74,7 @@ By default it prints a summary, not the log. `--preview` prints redacted text. `
 
 Patterns cover bearer/basic authorization headers, named credential fields, selected token prefixes, URL username/password pairs, and complete supported private-key blocks. Credential keys include API keys, access/refresh tokens, client secrets, passwords, AWS secret/session fields and private keys. `--key pin` adds a field name. `--emails` enables a common-address pattern; it is not a complete email-address parser.
 
-`--secrets-file` accepts up to 100 literal values, one per non-empty UTF-8 line, each 4–4,096 characters. No comment syntax is used. Literal strings are matched exactly, not as regex. Add such files under `local-data` when using Git locally.
+`--secrets-file` accepts up to 100 literal values, one per non-empty UTF-8 line, each 4â€“4,096 characters. No comment syntax is used. Literal strings are matched exactly, not as regex. Add such files under `local-data` when using Git locally.
 
 Overlapping matches form one replacement region. Per-rule match counts can overlap; `redactions` counts actual replacement regions. At most 100,000 pattern matches are accepted per operation.
 
@@ -97,7 +99,7 @@ py -3 -m unittest discover -s tests -v
 py -3 scripts/verify.py --output local-test-results.json
 ```
 
-The `verification` directory retains actual results from Windows on Python 3.13.14 and 3.14.3. They cover file preservation, UTF-8/BOM behavior, exact diffs, JSONL diagnostics/export, overlapping and escaped redactions, CLI exit codes and the complete demo. The bundled GitHub workflow runs the suite and demo on Ubuntu and Windows with Python 3.11, 3.13 and 3.14; those GitHub runs are pending publication. A workflow file is not evidence that remote checks passed.
+The `verification` directory retains actual results from Windows on Python 3.13.14 and 3.14.3. They cover file preservation, UTF-8/BOM behavior, exact diffs, JSONL diagnostics/export, overlapping and escaped redactions, CLI exit codes and the complete demo. [GitHub run 39022035167](https://github.com/brookmasonangel/microtools-free/actions/runs/39022035167) passed all six Ubuntu/Windows combinations with Python 3.11, 3.13 and 3.14 on 17 October 2026. Each job ran all 55 checks and the demo successfully. See the [retained GitHub summary](verification/github-2026-10-17.json). These results cover the declared functional checks and demo.
 
 Run from the extracted source folder without installation. `pyproject.toml` additionally defines a `microtools-free` console command for package installation; installation was not tested here and the source-tree examples/demo are not included in an installed package.
 

@@ -28,6 +28,26 @@
       "sha256": "fa1f990b97f1c728dff30f12a8bab384832363d48ac3cc63bd45701cd52d2e61"
     },
     {
+      "path": "LICENSE",
+      "bytes": 1081,
+      "sha256": "09079e5af36a31f88e24a95b6809defd1f7e12bf4a3fd4794f93fd727dc2e726"
+    },
+    {
+      "path": "Open-Tools.cmd",
+      "bytes": 177,
+      "sha256": "a1bfc224fbd290075c9005170cdf4e6ea39f0b1cb33b571140415e4c57184281"
+    },
+    {
+      "path": "README.md",
+      "bytes": 9001,
+      "sha256": "3fad529b5bdcd795f15e6ff08701d0cbcdee7deba65abaf77f40a3070d33c502"
+    },
+    {
+      "path": "Run-Demo.cmd",
+      "bytes": 192,
+      "sha256": "cee05d2272b0079aeada700fe666082f545f9c79dca3fd8be0e8e928ec4b4f00"
+    },
+    {
       "path": "docs/GITHUB_UPLOAD.md",
       "bytes": 2446,
       "sha256": "0ff49a63867b2a7dd4418f08aa00c188a376e408d527a52edd386436dba48fd4"
@@ -73,11 +93,6 @@
       "sha256": "5501a01e82a5c97a292efe79a9fde96dfbeda4db7f6fa0a6126920b9689c1da8"
     },
     {
-      "path": "LICENSE",
-      "bytes": 1081,
-      "sha256": "09079e5af36a31f88e24a95b6809defd1f7e12bf4a3fd4794f93fd727dc2e726"
-    },
-    {
       "path": "microtools_free/__init__.py",
       "bytes": 88,
       "sha256": "707832b41ace83a436148d63f9a4bf9ecd1b4060d2ea56daafbffda041fde4f5"
@@ -118,24 +133,9 @@
       "sha256": "eb1e33da692430dfed77170b6547efd242369b0079675df38f5b6df2f69792f1"
     },
     {
-      "path": "Open-Tools.cmd",
-      "bytes": 177,
-      "sha256": "a1bfc224fbd290075c9005170cdf4e6ea39f0b1cb33b571140415e4c57184281"
-    },
-    {
       "path": "pyproject.toml",
       "bytes": 436,
       "sha256": "f5c4208ec0015079f88f55d6e8f69eefd525841bef02446334a71aeed8ded6db"
-    },
-    {
-      "path": "README.md",
-      "bytes": 8614,
-      "sha256": "b0655dad8e1de3a4f066c0e9d6679d23e99cf51a6864548fcb6a64c4b7d51678"
-    },
-    {
-      "path": "Run-Demo.cmd",
-      "bytes": 192,
-      "sha256": "cee05d2272b0079aeada700fe666082f545f9c79dca3fd8be0e8e928ec4b4f00"
     },
     {
       "path": "sample-output/accepted-rows.jsonl",
@@ -206,6 +206,11 @@
       "path": "tests/workspace.py",
       "bytes": 689,
       "sha256": "3810e8884d7fc2f5887a55361e4ccb3475ed45bd30371ffe949d31e23779d60b"
+    },
+    {
+      "path": "verification/github-2026-10-17.json",
+      "bytes": 2025,
+      "sha256": "a0cf91b79da78833787f3f668e18314e1abbd015f1e3da3a9d27df532b625240"
     },
     {
       "path": "verification/python-3.13.json",

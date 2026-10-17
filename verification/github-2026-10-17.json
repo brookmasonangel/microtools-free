@@ -1,0 +1,72 @@
+{
+  "repository": "brookmasonangel/microtools-free",
+  "verified_date": "2026-10-17",
+  "tested_commit": "1df507a53fb27917e4d574e655a8d7a7a3519ba9",
+  "workflow_run_id": 39022035167,
+  "workflow_run_url": "https://github.com/brookmasonangel/microtools-free/actions/runs/39022035167",
+  "status": "completed",
+  "conclusion": "success",
+  "jobs": [
+    {
+      "job_id": 117365604095,
+      "name": "test (ubuntu-latest, 3.11)",
+      "conclusion": "success",
+      "test_summary": [
+        "Ran 55 tests in 0.068s"
+      ],
+      "demo_passed": true,
+      "tests_run": 55
+    },
+    {
+      "job_id": 117365603882,
+      "name": "test (ubuntu-latest, 3.14)",
+      "conclusion": "success",
+      "test_summary": [
+        "Ran 55 tests in 0.089s"
+      ],
+      "demo_passed": true,
+      "tests_run": 55
+    },
+    {
+      "job_id": 117365603962,
+      "name": "test (windows-latest, 3.13)",
+      "conclusion": "success",
+      "test_summary": [
+        "Ran 55 tests in 0.124s"
+      ],
+      "demo_passed": true,
+      "tests_run": 55
+    },
+    {
+      "job_id": 117365603979,
+      "name": "test (ubuntu-latest, 3.13)",
+      "conclusion": "success",
+      "test_summary": [
+        "Ran 55 tests in 0.057s"
+      ],
+      "demo_passed": true,
+      "tests_run": 55
+    },
+    {
+      "job_id": 117365603983,
+      "name": "test (windows-latest, 3.11)",
+      "conclusion": "success",
+      "test_summary": [
+        "Ran 55 tests in 0.070s"
+      ],
+      "demo_passed": true,
+      "tests_run": 55
+    },
+    {
+      "job_id": 117365604041,
+      "name": "test (windows-latest, 3.14)",
+      "conclusion": "success",
+      "test_summary": [
+        "Ran 55 tests in 0.105s"
+      ],
+      "demo_passed": true,
+      "tests_run": 55
+    }
+  ],
+  "scope": "The declared 55 functional checks and fictional demo passed in six GitHub-hosted Windows/Ubuntu and Python 3.11/3.13/3.14 combinations. This does not validate package installation, exhaustive credential detection, customer demand or production suitability."
+}
