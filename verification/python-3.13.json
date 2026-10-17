@@ -1,0 +1,235 @@
+{
+  "started_at_utc": "2026-10-02T11:52:33.740Z",
+  "finished_at_utc": "2026-10-02T11:52:33.869Z",
+  "python": "3.13.14",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "tests_run": 55,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "successful": true,
+  "scope": "Local file utilities, CLI, JSONL filtering, redaction patterns and fictional demo checks. No GitHub CI or installed-package checks.",
+  "checks": [
+    {
+      "test": "test_cli.CLITests.test_complete_demo_checks_and_file_outputs",
+      "result": "passed"
+    },
+    {
+      "test": "test_cli.CLITests.test_configdiff_ignored_timestamp_has_two_changes",
+      "result": "passed"
+    },
+    {
+      "test": "test_cli.CLITests.test_doctor_copy_requires_explicit_permission_to_drop_rows",
+      "result": "passed"
+    },
+    {
+      "test": "test_cli.CLITests.test_doctor_filtered_copy_contains_only_accepted_original_rows",
+      "result": "passed"
+    },
+    {
+      "test": "test_cli.CLITests.test_doctor_valid_and_broken_exit_codes",
+      "result": "passed"
+    },
+    {
+      "test": "test_cli.CLITests.test_empty_secret_line_ignored_but_short_literal_is_rejected",
+      "result": "passed"
+    },
+    {
+      "test": "test_cli.CLITests.test_existing_filtered_copy_prevents_report_creation",
+      "result": "passed"
+    },
+    {
+      "test": "test_cli.CLITests.test_existing_log_output_prevents_writes",
+      "result": "passed"
+    },
+    {
+      "test": "test_cli.CLITests.test_log_default_summary_does_not_print_values",
+      "result": "passed"
+    },
+    {
+      "test": "test_cli.CLITests.test_log_preview_and_separate_output_preserve_original",
+      "result": "passed"
+    },
+    {
+      "test": "test_cli.CLITests.test_missing_file_gives_no_traceback",
+      "result": "passed"
+    },
+    {
+      "test": "test_cli.CLITests.test_output_paths_must_differ",
+      "result": "passed"
+    },
+    {
+      "test": "test_cli.CLITests.test_promptdiff_text_and_difference_exit_codes",
+      "result": "passed"
+    },
+    {
+      "test": "test_cli.CLITests.test_valid_copy_adds_final_newline_and_removes_bom",
+      "result": "passed"
+    },
+    {
+      "test": "test_files.DiffTests.test_array_order_and_escaped_paths",
+      "result": "passed"
+    },
+    {
+      "test": "test_files.DiffTests.test_boolean_is_distinct_from_number",
+      "result": "passed"
+    },
+    {
+      "test": "test_files.DiffTests.test_ignore_subtree_and_root",
+      "result": "passed"
+    },
+    {
+      "test": "test_files.DiffTests.test_invalid_pointer_is_rejected",
+      "result": "passed"
+    },
+    {
+      "test": "test_files.DiffTests.test_json_key_order_and_numeric_equivalence",
+      "result": "passed"
+    },
+    {
+      "test": "test_files.DiffTests.test_prompt_change_and_final_newline_are_reported",
+      "result": "passed"
+    },
+    {
+      "test": "test_files.DiffTests.test_unicode_prompt_and_identical_text",
+      "result": "passed"
+    },
+    {
+      "test": "test_files.DiffTests.test_whitespace_mode_is_explicit",
+      "result": "passed"
+    },
+    {
+      "test": "test_files.DoctorTests.test_bad_parameters_are_errors",
+      "result": "passed"
+    },
+    {
+      "test": "test_files.DoctorTests.test_bom_accepted_and_missing_final_newline_not_an_error",
+      "result": "passed"
+    },
+    {
+      "test": "test_files.DoctorTests.test_custom_id_name_and_disabled_id_checks",
+      "result": "passed"
+    },
+    {
+      "test": "test_files.DoctorTests.test_duplicate_json_keys_and_invalid_unicode_are_rejected",
+      "result": "passed"
+    },
+    {
+      "test": "test_files.DoctorTests.test_empty_input_and_blank_lines_fail",
+      "result": "passed"
+    },
+    {
+      "test": "test_files.DoctorTests.test_id_optional_unless_required_but_present_ids_must_be_strings",
+      "result": "passed"
+    },
+    {
+      "test": "test_files.DoctorTests.test_issue_details_truncated_without_hiding_total_errors",
+      "result": "passed"
+    },
+    {
+      "test": "test_files.DoctorTests.test_no_id_or_row_value_dump_in_audit_report",
+      "result": "passed"
+    },
+    {
+      "test": "test_files.DoctorTests.test_reports_all_bad_rows_and_original_line_numbers",
+      "result": "passed"
+    },
+    {
+      "test": "test_files.DoctorTests.test_top_level_objects_only",
+      "result": "passed"
+    },
+    {
+      "test": "test_files.DoctorTests.test_unicode_line_separators_inside_strings_are_not_new_records",
+      "result": "passed"
+    },
+    {
+      "test": "test_files.DoctorTests.test_valid_file_and_exact_row_text_are_retained",
+      "result": "passed"
+    },
+    {
+      "test": "test_files.FileTests.test_bom_option_and_newline_preservation",
+      "result": "passed"
+    },
+    {
+      "test": "test_files.FileTests.test_duplicate_keys_and_nonfinite_json_are_rejected",
+      "result": "passed"
+    },
+    {
+      "test": "test_files.FileTests.test_existing_output_is_preserved",
+      "result": "passed"
+    },
+    {
+      "test": "test_files.FileTests.test_invalid_utf8_is_an_actionable_error",
+      "result": "passed"
+    },
+    {
+      "test": "test_redaction.RedactionTests.test_aws_secret_field_and_session_token",
+      "result": "passed"
+    },
+    {
+      "test": "test_redaction.RedactionTests.test_bearer_and_basic_headers",
+      "result": "passed"
+    },
+    {
+      "test": "test_redaction.RedactionTests.test_builtin_rules_are_idempotent",
+      "result": "passed"
+    },
+    {
+      "test": "test_redaction.RedactionTests.test_complete_private_key_block",
+      "result": "passed"
+    },
+    {
+      "test": "test_redaction.RedactionTests.test_custom_keys_and_literal_values",
+      "result": "passed"
+    },
+    {
+      "test": "test_redaction.RedactionTests.test_email_redaction_is_optional",
+      "result": "passed"
+    },
+    {
+      "test": "test_redaction.RedactionTests.test_environment_assignments_case_and_single_quotes",
+      "result": "passed"
+    },
+    {
+      "test": "test_redaction.RedactionTests.test_escaped_quotes_are_redacted_with_entire_value",
+      "result": "passed"
+    },
+    {
+      "test": "test_redaction.RedactionTests.test_invalid_custom_keys_and_literals_are_rejected",
+      "result": "passed"
+    },
+    {
+      "test": "test_redaction.RedactionTests.test_json_with_numeric_secret_is_text_redaction_not_validation",
+      "result": "passed"
+    },
+    {
+      "test": "test_redaction.RedactionTests.test_ordinary_text_and_unknown_credentials_remain",
+      "result": "passed"
+    },
+    {
+      "test": "test_redaction.RedactionTests.test_overlapping_literal_occurrences_leave_no_tail",
+      "result": "passed"
+    },
+    {
+      "test": "test_redaction.RedactionTests.test_overlapping_matches_are_one_replacement_region",
+      "result": "passed"
+    },
+    {
+      "test": "test_redaction.RedactionTests.test_quoted_json_fields_preserve_surrounding_text",
+      "result": "passed"
+    },
+    {
+      "test": "test_redaction.RedactionTests.test_recognized_token_prefixes",
+      "result": "passed"
+    },
+    {
+      "test": "test_redaction.RedactionTests.test_report_contains_no_matched_values",
+      "result": "passed"
+    },
+    {
+      "test": "test_redaction.RedactionTests.test_url_username_and_password_are_masked",
+      "result": "passed"
+    }
+  ],
+  "log": "test_complete_demo_checks_and_file_outputs (test_cli.CLITests.test_complete_demo_checks_and_file_outputs) ... ok\ntest_configdiff_ignored_timestamp_has_two_changes (test_cli.CLITests.test_configdiff_ignored_timestamp_has_two_changes) ... ok\ntest_doctor_copy_requires_explicit_permission_to_drop_rows (test_cli.CLITests.test_doctor_copy_requires_explicit_permission_to_drop_rows) ... ok\ntest_doctor_filtered_copy_contains_only_accepted_original_rows (test_cli.CLITests.test_doctor_filtered_copy_contains_only_accepted_original_rows) ... ok\ntest_doctor_valid_and_broken_exit_codes (test_cli.CLITests.test_doctor_valid_and_broken_exit_codes) ... ok\ntest_empty_secret_line_ignored_but_short_literal_is_rejected (test_cli.CLITests.test_empty_secret_line_ignored_but_short_literal_is_rejected) ... ok\ntest_existing_filtered_copy_prevents_report_creation (test_cli.CLITests.test_existing_filtered_copy_prevents_report_creation) ... ok\ntest_existing_log_output_prevents_writes (test_cli.CLITests.test_existing_log_output_prevents_writes) ... ok\ntest_log_default_summary_does_not_print_values (test_cli.CLITests.test_log_default_summary_does_not_print_values) ... ok\ntest_log_preview_and_separate_output_preserve_original (test_cli.CLITests.test_log_preview_and_separate_output_preserve_original) ... ok\ntest_missing_file_gives_no_traceback (test_cli.CLITests.test_missing_file_gives_no_traceback) ... ok\ntest_output_paths_must_differ (test_cli.CLITests.test_output_paths_must_differ) ... ok\ntest_promptdiff_text_and_difference_exit_codes (test_cli.CLITests.test_promptdiff_text_and_difference_exit_codes) ... ok\ntest_valid_copy_adds_final_newline_and_removes_bom (test_cli.CLITests.test_valid_copy_adds_final_newline_and_removes_bom) ... ok\ntest_array_order_and_escaped_paths (test_files.DiffTests.test_array_order_and_escaped_paths) ... ok\ntest_boolean_is_distinct_from_number (test_files.DiffTests.test_boolean_is_distinct_from_number) ... ok\ntest_ignore_subtree_and_root (test_files.DiffTests.test_ignore_subtree_and_root) ... ok\ntest_invalid_pointer_is_rejected (test_files.DiffTests.test_invalid_pointer_is_rejected) ... ok\ntest_json_key_order_and_numeric_equivalence (test_files.DiffTests.test_json_key_order_and_numeric_equivalence) ... ok\ntest_prompt_change_and_final_newline_are_reported (test_files.DiffTests.test_prompt_change_and_final_newline_are_reported) ... ok\ntest_unicode_prompt_and_identical_text (test_files.DiffTests.test_unicode_prompt_and_identical_text) ... ok\ntest_whitespace_mode_is_explicit (test_files.DiffTests.test_whitespace_mode_is_explicit) ... ok\ntest_bad_parameters_are_errors (test_files.DoctorTests.test_bad_parameters_are_errors) ... ok\ntest_bom_accepted_and_missing_final_newline_not_an_error (test_files.DoctorTests.test_bom_accepted_and_missing_final_newline_not_an_error) ... ok\ntest_custom_id_name_and_disabled_id_checks (test_files.DoctorTests.test_custom_id_name_and_disabled_id_checks) ... ok\ntest_duplicate_json_keys_and_invalid_unicode_are_rejected (test_files.DoctorTests.test_duplicate_json_keys_and_invalid_unicode_are_rejected) ... ok\ntest_empty_input_and_blank_lines_fail (test_files.DoctorTests.test_empty_input_and_blank_lines_fail) ... ok\ntest_id_optional_unless_required_but_present_ids_must_be_strings (test_files.DoctorTests.test_id_optional_unless_required_but_present_ids_must_be_strings) ... ok\ntest_issue_details_truncated_without_hiding_total_errors (test_files.DoctorTests.test_issue_details_truncated_without_hiding_total_errors) ... ok\ntest_no_id_or_row_value_dump_in_audit_report (test_files.DoctorTests.test_no_id_or_row_value_dump_in_audit_report) ... ok\ntest_reports_all_bad_rows_and_original_line_numbers (test_files.DoctorTests.test_reports_all_bad_rows_and_original_line_numbers) ... ok\ntest_top_level_objects_only (test_files.DoctorTests.test_top_level_objects_only) ... ok\ntest_unicode_line_separators_inside_strings_are_not_new_records (test_files.DoctorTests.test_unicode_line_separators_inside_strings_are_not_new_records) ... ok\ntest_valid_file_and_exact_row_text_are_retained (test_files.DoctorTests.test_valid_file_and_exact_row_text_are_retained) ... ok\ntest_bom_option_and_newline_preservation (test_files.FileTests.test_bom_option_and_newline_preservation) ... ok\ntest_duplicate_keys_and_nonfinite_json_are_rejected (test_files.FileTests.test_duplicate_keys_and_nonfinite_json_are_rejected) ... ok\ntest_existing_output_is_preserved (test_files.FileTests.test_existing_output_is_preserved) ... ok\ntest_invalid_utf8_is_an_actionable_error (test_files.FileTests.test_invalid_utf8_is_an_actionable_error) ... ok\ntest_aws_secret_field_and_session_token (test_redaction.RedactionTests.test_aws_secret_field_and_session_token) ... ok\ntest_bearer_and_basic_headers (test_redaction.RedactionTests.test_bearer_and_basic_headers) ... ok\ntest_builtin_rules_are_idempotent (test_redaction.RedactionTests.test_builtin_rules_are_idempotent) ... ok\ntest_complete_private_key_block (test_redaction.RedactionTests.test_complete_private_key_block) ... ok\ntest_custom_keys_and_literal_values (test_redaction.RedactionTests.test_custom_keys_and_literal_values) ... ok\ntest_email_redaction_is_optional (test_redaction.RedactionTests.test_email_redaction_is_optional) ... ok\ntest_environment_assignments_case_and_single_quotes (test_redaction.RedactionTests.test_environment_assignments_case_and_single_quotes) ... ok\ntest_escaped_quotes_are_redacted_with_entire_value (test_redaction.RedactionTests.test_escaped_quotes_are_redacted_with_entire_value) ... ok\ntest_invalid_custom_keys_and_literals_are_rejected (test_redaction.RedactionTests.test_invalid_custom_keys_and_literals_are_rejected) ... ok\ntest_json_with_numeric_secret_is_text_redaction_not_validation (test_redaction.RedactionTests.test_json_with_numeric_secret_is_text_redaction_not_validation) ... ok\ntest_ordinary_text_and_unknown_credentials_remain (test_redaction.RedactionTests.test_ordinary_text_and_unknown_credentials_remain) ... ok\ntest_overlapping_literal_occurrences_leave_no_tail (test_redaction.RedactionTests.test_overlapping_literal_occurrences_leave_no_tail) ... ok\ntest_overlapping_matches_are_one_replacement_region (test_redaction.RedactionTests.test_overlapping_matches_are_one_replacement_region) ... ok\ntest_quoted_json_fields_preserve_surrounding_text (test_redaction.RedactionTests.test_quoted_json_fields_preserve_surrounding_text) ... ok\ntest_recognized_token_prefixes (test_redaction.RedactionTests.test_recognized_token_prefixes) ... ok\ntest_report_contains_no_matched_values (test_redaction.RedactionTests.test_report_contains_no_matched_values) ... ok\ntest_url_username_and_password_are_masked (test_redaction.RedactionTests.test_url_username_and_password_are_masked) ... ok\n\n----------------------------------------------------------------------\nRan 55 tests in 0.102s\n\nOK\n"
+}

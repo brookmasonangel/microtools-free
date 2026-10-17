@@ -1,0 +1,222 @@
+{
+  "format": "microtools.file-manifest.v1",
+  "version": "0.1.0",
+  "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 123,
+      "sha256": "26458db1505fcf15ea829919912159a5a62410441aaf211daa8b78630fd16549"
+    },
+    {
+      "path": ".github/workflows/tests.yml",
+      "bytes": 633,
+      "sha256": "1b6efb23faf10dc2890383342a4f5432052fbe18641f43870c54c379977e14ea"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 194,
+      "sha256": "4b0d1bf3b6d094fdfd5007ab86c56d81f1c25dafa2eacb2f6461acfa33b61bd8"
+    },
+    {
+      "path": "BUILD_NOTES.txt",
+      "bytes": 2389,
+      "sha256": "3a15070b42fb7bfee414a55f43b79111774edbc3534a9eefb61b644fd2f73514"
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "bytes": 857,
+      "sha256": "fa1f990b97f1c728dff30f12a8bab384832363d48ac3cc63bd45701cd52d2e61"
+    },
+    {
+      "path": "docs/GITHUB_UPLOAD.md",
+      "bytes": 2446,
+      "sha256": "0ff49a63867b2a7dd4418f08aa00c188a376e408d527a52edd386436dba48fd4"
+    },
+    {
+      "path": "examples/config-after.json",
+      "bytes": 88,
+      "sha256": "e3939606a556b101719e07f39f98fb7fcf85f82f121ef3ff7e7d35b386c14dc7"
+    },
+    {
+      "path": "examples/config-before.json",
+      "bytes": 88,
+      "sha256": "7960e9d988b21bd138db00c012eb10214ff3b9f358e34c70e9cb0ca347a5f639"
+    },
+    {
+      "path": "examples/demo-secrets.txt",
+      "bytes": 22,
+      "sha256": "9d620b7d2c1e43544e8270979546dbd2d09b472994c508af2ae48260ff262404"
+    },
+    {
+      "path": "examples/demo.log",
+      "bytes": 427,
+      "sha256": "1e519391c8b36de96d9b2863b70dffebca89dd15be3bbfb847d57e28e2831690"
+    },
+    {
+      "path": "examples/jobs-broken.jsonl",
+      "bytes": 189,
+      "sha256": "362283d18dd70129325441d35c995e95d7a179fc07caa1745ad3c1a14a252f6e"
+    },
+    {
+      "path": "examples/jobs-valid.jsonl",
+      "bytes": 92,
+      "sha256": "f95f82b4cf5cdab1e7f375bdcca55cedd3f14f1cc05a58a982dcfe0eda263a9b"
+    },
+    {
+      "path": "examples/prompt-after.txt",
+      "bytes": 104,
+      "sha256": "3eda78bd38a82dcca6cbd5794d9624e6ee8c4305823ba45e09e4d41149315c0f"
+    },
+    {
+      "path": "examples/prompt-before.txt",
+      "bytes": 43,
+      "sha256": "5501a01e82a5c97a292efe79a9fde96dfbeda4db7f6fa0a6126920b9689c1da8"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 1081,
+      "sha256": "09079e5af36a31f88e24a95b6809defd1f7e12bf4a3fd4794f93fd727dc2e726"
+    },
+    {
+      "path": "microtools_free/__init__.py",
+      "bytes": 88,
+      "sha256": "707832b41ace83a436148d63f9a4bf9ecd1b4060d2ea56daafbffda041fde4f5"
+    },
+    {
+      "path": "microtools_free/__main__.py",
+      "bytes": 48,
+      "sha256": "935a1c1166b0c1ea35a82256345000bf2c73ded718d77773bc27a71ecce28f7d"
+    },
+    {
+      "path": "microtools_free/cli.py",
+      "bytes": 6101,
+      "sha256": "4ac3802cff23e4841c96b9fc4359811959a5d37339d73ac9e6e31e179a880dec"
+    },
+    {
+      "path": "microtools_free/common.py",
+      "bytes": 4559,
+      "sha256": "174da5d166f3fdff04b0b1f8a8cd55615fa83f5b7860408f76d4c8a46a923a73"
+    },
+    {
+      "path": "microtools_free/demo.py",
+      "bytes": 3006,
+      "sha256": "a776cf48db173528f51def0d6b79e7ac891014e747c1b92a3fd639e19f088649"
+    },
+    {
+      "path": "microtools_free/diffing.py",
+      "bytes": 3311,
+      "sha256": "393e00df85491f451045137e9453354b7c465cb408989a0295d7506f896a2010"
+    },
+    {
+      "path": "microtools_free/jsonldoctor.py",
+      "bytes": 4280,
+      "sha256": "3d25df292419cf85137273a9035d49917ed65637909935a4db93f50d129af0fa"
+    },
+    {
+      "path": "microtools_free/logredact.py",
+      "bytes": 4704,
+      "sha256": "eb1e33da692430dfed77170b6547efd242369b0079675df38f5b6df2f69792f1"
+    },
+    {
+      "path": "Open-Tools.cmd",
+      "bytes": 177,
+      "sha256": "a1bfc224fbd290075c9005170cdf4e6ea39f0b1cb33b571140415e4c57184281"
+    },
+    {
+      "path": "pyproject.toml",
+      "bytes": 436,
+      "sha256": "f5c4208ec0015079f88f55d6e8f69eefd525841bef02446334a71aeed8ded6db"
+    },
+    {
+      "path": "README.md",
+      "bytes": 8614,
+      "sha256": "b0655dad8e1de3a4f066c0e9d6679d23e99cf51a6864548fcb6a64c4b7d51678"
+    },
+    {
+      "path": "Run-Demo.cmd",
+      "bytes": 192,
+      "sha256": "cee05d2272b0079aeada700fe666082f545f9c79dca3fd8be0e8e928ec4b4f00"
+    },
+    {
+      "path": "sample-output/accepted-rows.jsonl",
+      "bytes": 87,
+      "sha256": "39f12a690aa443e7014b4e8b72e6f877193d7838c27bd9525c6db93f6a332fa3"
+    },
+    {
+      "path": "sample-output/config-diff.json",
+      "bytes": 417,
+      "sha256": "598d76473a12549ced2a5bb158c90e235778361b2043ae79964f0f68b92635f2"
+    },
+    {
+      "path": "sample-output/demo-summary.json",
+      "bytes": 406,
+      "sha256": "09244f1649b743566573c1683b29976f2f611272b865e6135a1cc693f8599701"
+    },
+    {
+      "path": "sample-output/jsonl-broken.json",
+      "bytes": 1309,
+      "sha256": "3aa04a3a28df91271c80d9c201b6b61d6d9533697c3a35f588b67b38539f2d80"
+    },
+    {
+      "path": "sample-output/jsonl-valid.json",
+      "bytes": 663,
+      "sha256": "79e285042b649551123973fff84dc3f950ecfce7f78084617b0b9beee9ae4f06"
+    },
+    {
+      "path": "sample-output/prompt-diff.json",
+      "bytes": 548,
+      "sha256": "185392949eb472238dc5f5c0acf3e81ee60808ac76286246ed7e24cd416f1c5b"
+    },
+    {
+      "path": "sample-output/prompt-diff.txt",
+      "bytes": 173,
+      "sha256": "d8b475c777d953868e3359e222d9ba0266497687b5d85b82b04505576f0073ac"
+    },
+    {
+      "path": "sample-output/redacted-demo.log",
+      "bytes": 340,
+      "sha256": "222bcf7b82c9c6804dfa08875fc1144d2eefd566a0dd861b91f9edff21646b73"
+    },
+    {
+      "path": "sample-output/redaction-report.json",
+      "bytes": 733,
+      "sha256": "d0ab9a7ea79c61b1764ac83b94ad89c52aadb65a35ccfb4d1bd9694245e4b12e"
+    },
+    {
+      "path": "scripts/verify.py",
+      "bytes": 2295,
+      "sha256": "cb4e69b93cb57f0ab42a01522cac28e2fad065692c10d56a26f24abd0c9510df"
+    },
+    {
+      "path": "tests/test_cli.py",
+      "bytes": 6291,
+      "sha256": "b3c471ba7e91103322554e5f1816c15a63cdbc19f78de3f204fd3b195c204ca0"
+    },
+    {
+      "path": "tests/test_files.py",
+      "bytes": 7110,
+      "sha256": "411311f8a1296b23146ad01bfb99c145c7261ddd34eb07e2a115f2b73d5e9fc9"
+    },
+    {
+      "path": "tests/test_redaction.py",
+      "bytes": 5234,
+      "sha256": "2b3948c0402945f53bbb5a11364a24e9b07a0ecf6590a6d709490abef8d2ed83"
+    },
+    {
+      "path": "tests/workspace.py",
+      "bytes": 689,
+      "sha256": "3810e8884d7fc2f5887a55361e4ccb3475ed45bd30371ffe949d31e23779d60b"
+    },
+    {
+      "path": "verification/python-3.13.json",
+      "bytes": 14095,
+      "sha256": "d51ac12f9761597af6697a2941c70e401cdc67cef5f473f64b24693608f993b9"
+    },
+    {
+      "path": "verification/python-3.14.json",
+      "bytes": 14094,
+      "sha256": "61d7ac2a0a1c233ca62ecc0b5d886828187cc5eb0424d8504eac4e4774224d6e"
+    }
+  ],
+  "scope": "Integrity hashes for packaged files except this manifest. Not independently signed. Text bytes may change after Git line-ending conversion."
+}

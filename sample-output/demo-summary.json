@@ -1,0 +1,14 @@
+{
+  "demo": "Micro Tools Free",
+  "mode": "local fictional examples; no network calls",
+  "checks": {
+    "prompt_changes_detected": true,
+    "two_config_changes_detected": true,
+    "valid_jsonl_accepted": true,
+    "four_problem_rows_detected": true,
+    "two_good_rows_preserved": true,
+    "six_redaction_regions": true,
+    "ordinary_log_text_preserved": true
+  },
+  "all_demo_checks_passed": true
+}

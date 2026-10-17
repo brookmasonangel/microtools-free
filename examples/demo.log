@@ -1,0 +1,6 @@
+DEMO ONLY: all credential-looking values in this file are fictional.
+2026-10-02 INFO Authorization: Bearer DEMO_BEARER_NOT_REAL_123456
+2026-10-02 DEBUG payload={"api_key":"DEMO_API_KEY_NOT_REAL","password":"DEMO_PASSWORD_NOT_REAL","message":"Keep this text"}
+2026-10-02 INFO connect=https://demo_user:demo_password@invalid.example/service
+2026-10-02 INFO contact=user@example.test
+2026-10-02 INFO literal=DEMO_LITERAL_NOT_REAL

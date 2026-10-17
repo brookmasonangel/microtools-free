@@ -1,0 +1,6 @@
+DEMO ONLY: all credential-looking values in this file are fictional.
+2026-10-02 INFO Authorization: Bearer [REDACTED]
+2026-10-02 DEBUG payload={"api_key":"[REDACTED]","password":"[REDACTED]","message":"Keep this text"}
+2026-10-02 INFO connect=https://[REDACTED]/service
+2026-10-02 INFO contact=[REDACTED]
+2026-10-02 INFO literal=[REDACTED]

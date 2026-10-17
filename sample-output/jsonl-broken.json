@@ -1,0 +1,51 @@
+{
+  "tool": "JSONLDoctor",
+  "valid": false,
+  "physical_lines": 6,
+  "parsed_json_rows": 4,
+  "accepted_rows": 2,
+  "rejected_rows": 4,
+  "blank_lines": 1,
+  "total_issues": 4,
+  "issues_by_code": {
+    "duplicate_id": 1,
+    "missing_field": 1,
+    "invalid_json": 1,
+    "blank_line": 1
+  },
+  "issues": [
+    {
+      "line": 2,
+      "code": "duplicate_id",
+      "message": "ID duplicates an earlier record",
+      "field": "id",
+      "first_line": 1
+    },
+    {
+      "line": 3,
+      "code": "missing_field",
+      "message": "Required top-level field is absent",
+      "field": "prompt"
+    },
+    {
+      "line": 4,
+      "code": "invalid_json",
+      "message": "Invalid JSONL line 4: Expecting value: line 1 column 28 (char 27)"
+    },
+    {
+      "line": 5,
+      "code": "blank_line",
+      "message": "Blank lines are not JSON records"
+    }
+  ],
+  "issue_details_truncated": false,
+  "required_fields": [
+    "id",
+    "prompt"
+  ],
+  "id_field": "id",
+  "utf8_bom_accepted": false,
+  "trailing_newline": true,
+  "source_text_sha256": "362283d18dd70129325441d35c995e95d7a179fc07caa1745ad3c1a14a252f6e",
+  "scope": "Object rows, strict JSON, optional top-level field presence and string ID checks. No schema inference or guessed repairs; input row contents are not included in this report."
+}

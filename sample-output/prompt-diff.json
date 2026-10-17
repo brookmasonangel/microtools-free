@@ -1,0 +1,12 @@
+{
+  "tool": "PromptDiff",
+  "changed": true,
+  "comparison": "exact_text",
+  "before_text_sha256": "5501a01e82a5c97a292efe79a9fde96dfbeda4db7f6fa0a6126920b9689c1da8",
+  "after_text_sha256": "3eda78bd38a82dcca6cbd5794d9624e6ee8c4305823ba45e09e4d41149315c0f",
+  "before_characters": 43,
+  "after_characters": 104,
+  "before_lines": 2,
+  "after_lines": 3,
+  "diff": "--- before\n+++ after\n@@ -1,2 +1,3 @@\n-Answer the user's question.\n+Answer the user's question in plain English.\n Keep it short.\n+State uncertainty when evidence is missing.\n"
+}

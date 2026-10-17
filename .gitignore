@@ -1,0 +1,17 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.test-work/
+demo-output/
+local-data/
+local-output/
+dist/
+build/
+*.egg-info/
+.env
+.env.*
+secrets.txt
+*.log
+!examples/demo.log
+!sample-output/redacted-demo.log

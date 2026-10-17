@@ -1,0 +1,20 @@
+{
+  "tool": "LogRedact",
+  "changed": true,
+  "redactions": 6,
+  "matches_by_rule": {
+    "authorization_header": 1,
+    "credential_field": 2,
+    "url_credentials": 1,
+    "email": 2,
+    "supplied_literal": 1
+  },
+  "rule_matches_may_overlap": true,
+  "characters_before": 427,
+  "characters_after": 340,
+  "redacted_text_sha256": "222bcf7b82c9c6804dfa08875fc1144d2eefd566a0dd861b91f9edff21646b73",
+  "email_matching_enabled": true,
+  "custom_key_count": 0,
+  "supplied_literal_count": 1,
+  "scope": "Configured text patterns and supplied literal strings only. Unknown or encoded secrets, private data and unsupported formats may remain. Review the redacted output before sharing; structured format validity is not guaranteed."
+}

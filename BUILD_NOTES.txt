@@ -1,0 +1,40 @@
+MICRO TOOLS FREE — BUILD NOTES
+Version 0.1.0 — 2026-10-02
+
+Delivered
+Four free CLI utilities in a separate package:
+PromptDiff — text differences and optional whitespace normalization.
+ConfigDiff — JSON value differences, escaped paths and ignored subtrees.
+JSONLDoctor — complete-row audit, missing fields, string IDs and explicit filtering.
+LogRedact — configured credential patterns, supplied literal values and optional emails.
+Includes MIT licence, examples, Windows launchers, repository documentation,
+GitHub upload steps, test workflow and retained local test results.
+
+Proven by retained checks
+55 checks passed on Python 3.13.14 with zero failures, errors or skips.
+55 checks passed on Python 3.14.3 with zero failures, errors or skips.
+Both test executions ran on Windows. See verification/*.json for individual
+test names and logs. The four-tool demo passed all seven aggregate checks.
+It retained two prompt changes, two JSON setting changes, four rejected
+JSONL rows, two accepted JSONL rows and six redaction regions from fictional data.
+No model API, remote service or live credentials were used.
+
+Evidence limits
+GitHub CI is configured but has not run; the repository is not published.
+Ubuntu/Linux, macOS and Python 3.11 were not exercised locally.
+Package installation and standalone executable installation were not tested.
+Source-folder execution requires Python 3.11 or later and no third-party packages.
+LogRedact masks documented patterns; it cannot establish comprehensive secret
+or personal-data removal. Unsupported or encoded data may remain. Review output.
+JSONLDoctor checks objects, strict JSON, top-level field presence and string IDs;
+it does not infer a schema or repair rejected rows. Filtering requires an explicit flag.
+Text input size and diagnostic/match caps are documented in README.md.
+Local tests do not establish adoption, demand, paid conversion or production suitability.
+
+Publication
+Use a fresh extraction and upload the contents of the microtools-free directory
+to a public repository named microtools-free. Include the supplied README,
+licence, .github workflow and source subdirectories at the repository root.
+docs/GITHUB_UPLOAD.md contains the browser steps and official references.
+The free package contains these four commands; the eight-tool suite is separate.
+Original synced project reference files were not modified.

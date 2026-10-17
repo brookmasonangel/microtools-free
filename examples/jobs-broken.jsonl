@@ -1,0 +1,6 @@
+{"id":"greeting","prompt":"Say hello."}
+{"id":"greeting","prompt":"This repeats an ID."}
+{"id":"missing-prompt"}
+{"id":"truncated","prompt":
+
+{"id":"summary","prompt":"This row is valid."}

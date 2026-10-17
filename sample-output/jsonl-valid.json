@@ -1,0 +1,22 @@
+{
+  "tool": "JSONLDoctor",
+  "valid": true,
+  "physical_lines": 2,
+  "parsed_json_rows": 2,
+  "accepted_rows": 2,
+  "rejected_rows": 0,
+  "blank_lines": 0,
+  "total_issues": 0,
+  "issues_by_code": {},
+  "issues": [],
+  "issue_details_truncated": false,
+  "required_fields": [
+    "id",
+    "prompt"
+  ],
+  "id_field": "id",
+  "utf8_bom_accepted": false,
+  "trailing_newline": true,
+  "source_text_sha256": "f95f82b4cf5cdab1e7f375bdcca55cedd3f14f1cc05a58a982dcfe0eda263a9b",
+  "scope": "Object rows, strict JSON, optional top-level field presence and string ID checks. No schema inference or guessed repairs; input row contents are not included in this report."
+}

@@ -1,0 +1,22 @@
+{
+  "tool": "ConfigDiff",
+  "changed": true,
+  "ignored_paths": [
+    "/metadata/updated"
+  ],
+  "changes": [
+    {
+      "path": "/max_tokens",
+      "operation": "replace",
+      "before": 200,
+      "after": 300
+    },
+    {
+      "path": "/temperature",
+      "operation": "replace",
+      "before": 0.7,
+      "after": 0.2
+    }
+  ],
+  "scope": "JSON values; object key order ignored, array order significant"
+}
